@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Junior do Bode | Comida Nordestina em Feira de Santana - BA</title>
+<meta name="description" content="Bode na brasa, cupim, arroz e feijão tropeiro fartos como em casa. Peça agora pelo WhatsApp ou venha almoçar no Junior do Bode, em Feira de Santana - BA. 4,4★ com 119 avaliações.">
+<meta name="keywords" content="restaurante Feira de Santana, comida nordestina, carne de bode, cupim, churrasco de bode, delivery Feira de Santana">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:title" content="Junior do Bode | Comida Nordestina em Feira de Santana - BA">
+<meta property="og:description" content="Bode na brasa, cupim, arroz e feijão tropeiro fartos como em casa. Peça pelo WhatsApp ou venha almoçar com a gente.">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐐</text></svg>">
+
+<!-- Fontes: Fraunces (display, calor artesanal) + Karla (leitura, humanista) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream:   { DEFAULT: '#F5EEDD', 2: '#EFE3C4' },
+          ink:     { DEFAULT: '#241611', 2: '#341F16', 3: '#4A2E20' },
+          burnt:   { DEFAULT: '#B23A20', dark: '#8C2C17', light: '#D2582F' },
+          mustard: { DEFAULT: '#D9A02E', dark: '#B87F1C', light: '#EBC069' },
+          clay:    { DEFAULT: '#C97C4F' },
+        },
+        fontFamily: {
+          display: ['"Fraunces"', 'ui-serif', 'serif'],
+          sans: ['"Karla"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        },
+        boxShadow: {
+          stamp: '0 6px 0 0 rgba(36,22,17,0.15)',
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  :root{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    :root{ scroll-behavior: auto; }
+    *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  }
+
+  body{ background-color:#F5EEDD; }
+
+  /* Textura sutil tipo papel de açougue, sem prejudicar contraste */
+  .paper-grain{
+    background-image:
+      radial-gradient(rgba(36,22,17,0.045) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+
+  /* Divisor "serrilhado" estilo papel rasgado de açougue — elemento assinatura */
+  .torn-edge{
+    position:relative;
+  }
+  .torn-edge::after{
+    content:"";
+    position:absolute; left:0; right:0; bottom:-1px; height:14px;
+    background:
+      linear-gradient(135deg, transparent 8px, var(--edge-color,#F5EEDD) 8px) 0 0,
+      linear-gradient(-135deg, transparent 8px, var(--edge-color,#F5EEDD) 8px) 0 0;
+    background-size: 16px 16px;
+    background-repeat: repeat-x;
+  }
+
+  /* Selo/carimbo rotacionado — assinatura visual de "aprovado" */
+  .stamp{
+    transform: rotate(-7deg);
+  }
+
+  .fade-up{ opacity:0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+  .fade-up.is-visible{ opacity:1; transform: translateY(0); }
+
+  .placeholder-photo{
+    background:
+      repeating-linear-gradient(135deg, rgba(36,22,17,0.06) 0 2px, transparent 2px 14px),
+      linear-gradient(160deg, #C97C4F 0%, #B23A20 55%, #7A2114 100%);
+  }
+
+  ::selection{ background:#D9A02E; color:#241611; }
+
+  a, button{ cursor:pointer; }
+
+  /* foco visível para navegação por teclado */
+  a:focus-visible, button:focus-visible, input:focus-visible{
+    outline: 3px solid #D9A02E;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+
+<body class="font-sans text-ink antialiased">
+
+<!-- ============ HEADER ============ -->
+<header id="topo" class="fixed top-0 inset-x-0 z-40 bg-ink/95 backdrop-blur supports-[backdrop-filter]:bg-ink/85 text-cream">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="#topo" class="flex items-center gap-2 shrink-0" aria-label="Junior do Bode, início">
+      <span class="font-display font-bold text-xl md:text-2xl tracking-tight text-mustard">Junior<span class="text-cream"> do Bode</span></span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 font-medium text-sm tracking-wide" aria-label="Navegação principal">
+      <a href="#sabor" class="hover:text-mustard transition-colors">Início</a>
+      <a href="#cardapio" class="hover:text-mustard transition-colors">Cardápio</a>
+      <a href="#avaliacoes" class="hover:text-mustard transition-colors">Avaliações</a>
+      <a href="#sobre" class="hover:text-mustard transition-colors">Sobre</a>
+      <a href="#localizacao" class="hover:text-mustard transition-colors">Localização</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/5575992297914" data-wa="pedido"
+         class="hidden md:inline-flex items-center gap-2 bg-burnt hover:bg-burnt-dark active:scale-[0.98] transition-all text-cream font-semibold text-sm px-5 py-2.5 rounded-full shadow-stamp">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.1 7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.5.9.9-3.4-.2-.3C3.5 14.4 3 13.2 3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9.2z"/></svg>
+        Pedir agora
+      </a>
+
+      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-white/10 transition-colors" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg id="iconOpen" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg id="iconClose" class="w-6 h-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-ink">
+    <nav class="max-w-6xl mx-auto px-5 py-4 flex flex-col gap-1 font-medium" aria-label="Navegação mobile">
+      <a href="#sabor" class="py-3 border-b border-white/10">Início</a>
+      <a href="#cardapio" class="py-3 border-b border-white/10">Cardápio</a>
+      <a href="#avaliacoes" class="py-3 border-b border-white/10">Avaliações</a>
+      <a href="#sobre" class="py-3 border-b border-white/10">Sobre</a>
+      <a href="#localizacao" class="py-3">Localização</a>
+      <a href="https://wa.me/5575992297914" data-wa="pedido" class="mt-4 mb-2 inline-flex justify-center items-center gap-2 bg-burnt text-cream font-semibold px-5 py-3 rounded-full">Pedir pelo WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative pt-16 md:pt-20 min-h-[92svh] flex items-end text-cream overflow-hidden">
+  <!-- PLACEHOLDER: substituir por foto real do bode/churrasco na brasa em tela cheia -->
+  <div class="absolute inset-0 placeholder-photo" role="img" aria-label="Foto do churrasco de bode na brasa do restaurante Junior do Bode">
+    <div class="absolute inset-0 flex items-center justify-center text-cream/25 font-display text-sm tracking-[0.3em] uppercase">[ Foto: churrasco de bode na brasa ]</div>
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-ink/60 via-transparent to-transparent"></div>
+
+  <div class="relative max-w-6xl mx-auto w-full px-5 md:px-8 pb-12 md:pb-20 pt-24">
+    <div class="max-w-2xl">
+      <div class="fade-up flex flex-wrap items-center gap-2 mb-5 text-xs md:text-sm font-semibold tracking-wide">
+        <span class="inline-flex items-center gap-1.5 bg-mustard text-ink px-3 py-1.5 rounded-full">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          4,4 · 119 avaliações
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur px-3 py-1.5 rounded-full">R$ 20–100 por pessoa</span>
+        <span class="hidden sm:inline-flex items-center gap-1.5 bg-white/10 backdrop-blur px-3 py-1.5 rounded-full">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1a6 6 0 00-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 00-6-6zm0 8.5A2.5 2.5 0 1110 4a2.5 2.5 0 010 5.5z"/></svg>
+          Bairro Sim, Feira de Santana
+        </span>
+      </div>
+
+      <h1 class="fade-up font-display font-bold text-[2.6rem] leading-[1.05] sm:text-6xl md:text-6xl md:leading-[1.03] text-cream">
+        Bode na brasa. Mesa farta.<br>
+        <span class="text-mustard">Sabor que gruda na memória.</span>
+      </h1>
+
+      <p class="fade-up mt-6 text-base md:text-lg text-cream/85 max-w-lg leading-relaxed">
+        Comida nordestina feita como em casa: carne bem preparada, porção que não acaba na metade e aquele tempero que só quem entende de bode na brasa sabe fazer.
+      </p>
+
+      <div class="fade-up mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/5575992297914" data-wa="pedido"
+           class="inline-flex items-center justify-center gap-2 bg-burnt hover:bg-burnt-dark active:scale-[0.98] transition-all text-cream font-bold text-base px-7 py-4 rounded-full shadow-lg shadow-black/30">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.1 7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.5.9.9-3.4-.2-.3C3.5 14.4 3 13.2 3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9.2z"/></svg>
+          Pedir pelo WhatsApp
+        </a>
+        <a href="https://www.canva.com/design/DAG80VpFfd8/dVuLpSceZWFhwHhWDzjRfQ/view" target="_blank" rel="noopener"
+           class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-cream/40 hover:border-mustard hover:text-mustard transition-colors text-cream font-bold text-base px-7 py-4 rounded-full">
+          Ver cardápio
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SABOR / EXPERIÊNCIA ============ -->
+<section id="sabor" class="relative bg-ink text-cream py-16 md:py-24 torn-edge" style="--edge-color:#F5EEDD">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="max-w-xl fade-up">
+      <span class="text-mustard font-semibold text-sm tracking-[0.2em] uppercase">A experiência</span>
+      <h2 class="font-display font-bold text-3xl md:text-5xl mt-3 leading-tight">O sabor que faz você voltar</h2>
+      <p class="mt-5 text-cream/80 text-base md:text-lg leading-relaxed">
+        Prato farto, tempero de casa e aquele clima simples e acolhedor que faz o almoço render — e a vontade de voltar aparecer antes mesmo de terminar de comer.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-5 md:gap-6 mt-12">
+      <div class="fade-up bg-ink-2/60 border border-white/10 rounded-2xl p-6">
+        <svg class="w-9 h-9 text-mustard mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 15c0-4 3-6 8-6s8 2 8 6-4 6-8 6-8-2-8-6z"/><path d="M6 9c0-3 2-5 6-5s6 2 6 5"/></svg>
+        <h3 class="font-display font-semibold text-xl">Porção generosa</h3>
+        <p class="mt-2 text-sm text-cream/75 leading-relaxed">Prato farto de verdade — daquele jeito que sobra pra levar, não pra reclamar.</p>
+      </div>
+      <div class="fade-up bg-ink-2/60 border border-white/10 rounded-2xl p-6">
+        <svg class="w-9 h-9 text-mustard mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2v6M8 5l1 3M16 5l-1 3"/><path d="M5 12h14l-1.2 8.2a2 2 0 01-2 1.8H8.2a2 2 0 01-2-1.8L5 12z"/></svg>
+        <h3 class="font-display font-semibold text-xl">Tempero de casa</h3>
+        <p class="mt-2 text-sm text-cream/75 leading-relaxed">Bode e cupim preparados com o cuidado de quem cozinha pra família, não pra vitrine.</p>
+      </div>
+      <div class="fade-up bg-ink-2/60 border border-white/10 rounded-2xl p-6">
+        <svg class="w-9 h-9 text-mustard mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+        <h3 class="font-display font-semibold text-xl">Atendimento rápido</h3>
+        <p class="mt-2 text-sm text-cream/75 leading-relaxed">Mesmo cheio nos fins de semana, o ritmo é ágil — sem aquela espera cansativa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARDÁPIO / DESTAQUES ============ -->
+<section id="cardapio" class="py-16 md:py-24 bg-cream paper-grain">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 fade-up">
+      <div>
+        <span class="text-burnt font-semibold text-sm tracking-[0.2em] uppercase">Direto da brasa</span>
+        <h2 class="font-display font-bold text-3xl md:text-5xl mt-3 leading-tight text-ink">Destaques do cardápio</h2>
+      </div>
+      <a href="https://www.canva.com/design/DAG80VpFfd8/dVuLpSceZWFhwHhWDzjRfQ/view" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 text-ink font-semibold border-b-2 border-mustard hover:text-burnt hover:border-burnt transition-colors w-fit">
+        Ver cardápio completo
+        <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L13.586 10H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+      </a>
+    </div>
+
+    <p class="fade-up mt-4 text-sm text-ink-3 max-w-xl">Itens citados por clientes nas avaliações do restaurante. Confira o cardápio completo para disponibilidade e composição exata dos pratos.</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-10">
+      <!-- Card de prato — estilo "comanda" (ticket serrilhado), assinatura visual da seção -->
+      <template id="dishTpl"></template>
+
+      <div class="fade-up group relative bg-white rounded-xl p-3 pb-4 shadow-[0_2px_0_#e8dcc0]">
+        <div class="aspect-square rounded-lg placeholder-photo relative overflow-hidden">
+          <span class="absolute inset-0 flex items-center justify-center text-[10px] text-cream/40 text-center px-2 uppercase tracking-wider">[ Foto: bode assado ]</span>
+        </div>
+        <p class="font-display font-semibold text-ink mt-3 text-sm md:text-base">Bode na brasa</p>
+        <p class="text-xs text-ink-3 mt-0.5">O carro-chefe da casa</p>
+      </div>
+
+      <div class="fade-up group relative bg-white rounded-xl p-3 pb-4 shadow-[0_2px_0_#e8dcc0]">
+        <div class="aspect-square rounded-lg placeholder-photo relative overflow-hidden">
+          <span class="absolute inset-0 flex items-center justify-center text-[10px] text-cream/40 text-center px-2 uppercase tracking-wider">[ Foto: cupim ]</span>
+        </div>
+        <p class="font-display font-semibold text-ink mt-3 text-sm md:text-base">Cupim</p>
+        <p class="text-xs text-ink-3 mt-0.5">Macio, direto da brasa</p>
+      </div>
+
+      <div class="fade-up group relative bg-white rounded-xl p-3 pb-4 shadow-[0_2px_0_#e8dcc0]">
+        <div class="aspect-square rounded-lg placeholder-photo relative overflow-hidden">
+          <span class="absolute inset-0 flex items-center justify-center text-[10px] text-cream/40 text-center px-2 uppercase tracking-wider">[ Foto: feijão tropeiro ]</span>
+        </div>
+        <p class="font-display font-semibold text-ink mt-3 text-sm md:text-base">Feijão tropeiro</p>
+        <p class="text-xs text-ink-3 mt-0.5">Acompanhamento clássico</p>
+      </div>
+
+      <div class="fade-up group relative bg-white rounded-xl p-3 pb-4 shadow-[0_2px_0_#e8dcc0]">
+        <div class="aspect-square rounded-lg placeholder-photo relative overflow-hidden">
+          <span class="absolute inset-0 flex items-center justify-center text-[10px] text-cream/40 text-center px-2 uppercase tracking-wider">[ Foto: pirão de leite ]</span>
+        </div>
+        <p class="font-display font-semibold text-ink mt-3 text-sm md:text-base">Pirão de leite</p>
+        <p class="text-xs text-ink-3 mt-0.5">Cremoso, do jeito certo</p>
+      </div>
+
+      <div class="fade-up group relative bg-white rounded-xl p-3 pb-4 shadow-[0_2px_0_#e8dcc0]">
+        <div class="aspect-square rounded-lg placeholder-photo relative overflow-hidden">
+          <span class="absolute inset-0 flex items-center justify-center text-[10px] text-cream/40 text-center px-2 uppercase tracking-wider">[ Foto: vinagrete ]</span>
+        </div>
+        <p class="font-display font-semibold text-ink mt-3 text-sm md:text-base">Vinagrete</p>
+        <p class="text-xs text-ink-3 mt-0.5">Fresco, corta a gordura</p>
+      </div>
+
+      <div class="fade-up group relative bg-white rounded-xl p-3 pb-4 shadow-[0_2px_0_#e8dcc0]">
+        <div class="aspect-square rounded-lg placeholder-photo relative overflow-hidden">
+          <span class="absolute inset-0 flex items-center justify-center text-[10px] text-cream/40 text-center px-2 uppercase tracking-wider">[ Foto: aipim frito ]</span>
+        </div>
+        <p class="font-display font-semibold text-ink mt-3 text-sm md:text-base">Aipim frito</p>
+        <p class="text-xs text-ink-3 mt-0.5">Douradinho por fora</p>
+      </div>
+
+      <div class="fade-up group relative bg-white rounded-xl p-3 pb-4 shadow-[0_2px_0_#e8dcc0]">
+        <div class="aspect-square rounded-lg placeholder-photo relative overflow-hidden">
+          <span class="absolute inset-0 flex items-center justify-center text-[10px] text-cream/40 text-center px-2 uppercase tracking-wider">[ Foto: arroz soltinho ]</span>
+        </div>
+        <p class="font-display font-semibold text-ink mt-3 text-sm md:text-base">Arroz</p>
+        <p class="text-xs text-ink-3 mt-0.5">A base de tudo</p>
+      </div>
+
+      <div class="fade-up relative bg-ink rounded-xl p-3 pb-4 flex flex-col items-center justify-center text-center gap-3 shadow-[0_2px_0_#e8dcc0]">
+        <svg class="w-9 h-9 text-mustard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        <a href="https://www.canva.com/design/DAG80VpFfd8/dVuLpSceZWFhwHhWDzjRfQ/view" target="_blank" rel="noopener" class="text-cream font-display font-semibold text-sm underline decoration-mustard underline-offset-4">Ver cardápio completo</a>
+      </div>
+    </div>
+
+    <div class="fade-up mt-10 text-center">
+      <a href="https://wa.me/5575992297914" data-wa="pedido"
+         class="inline-flex items-center justify-center gap-2 bg-burnt hover:bg-burnt-dark transition-colors text-cream font-bold px-7 py-4 rounded-full">
+        Quero pedir agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROVA SOCIAL ============ -->
+<section id="avaliacoes" class="py-16 md:py-24 bg-cream-2">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="fade-up text-center max-w-xl mx-auto">
+      <span class="text-burnt font-semibold text-sm tracking-[0.2em] uppercase">Quem já foi, garante</span>
+      <h2 class="font-display font-bold text-3xl md:text-5xl mt-3 leading-tight text-ink">119 pessoas já aprovaram</h2>
+      <div class="flex items-center justify-center gap-1 mt-4" aria-label="Avaliação 4,4 de 5 estrelas">
+        <svg class="w-6 h-6 text-mustard" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+        <svg class="w-6 h-6 text-mustard" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+        <svg class="w-6 h-6 text-mustard" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+        <svg class="w-6 h-6 text-mustard" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+        <svg class="w-6 h-6 text-mustard/50" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+        <span class="ml-2 font-display font-bold text-ink">4,4</span>
+        <span class="text-ink-3 text-sm">· 119 avaliações no Google</span>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5 md:gap-6 mt-12">
+      <blockquote class="fade-up bg-white rounded-2xl p-6 shadow-[0_2px_0_#e8dcc0]">
+        <div class="flex gap-0.5 text-mustard mb-4" aria-hidden="true">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+        </div>
+        <p class="text-ink font-medium leading-relaxed">"Lugar ótimo, preços justos, comida muito boa!"</p>
+        <footer class="mt-4 text-sm text-ink-3">Avaliação no Google</footer>
+      </blockquote>
+
+      <blockquote class="fade-up bg-white rounded-2xl p-6 shadow-[0_2px_0_#e8dcc0]">
+        <div class="flex gap-0.5 text-mustard mb-4" aria-hidden="true">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+        </div>
+        <p class="text-ink font-medium leading-relaxed">"Pedimos um misto com cupim e bode e veio com vinagrete, arroz, feijão tropeiro e pirão de leite."</p>
+        <footer class="mt-4 text-sm text-ink-3">Avaliação no Google</footer>
+      </blockquote>
+
+      <blockquote class="fade-up bg-white rounded-2xl p-6 shadow-[0_2px_0_#e8dcc0]">
+        <div class="flex gap-0.5 text-mustard mb-4" aria-hidden="true">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+        </div>
+        <p class="text-ink font-medium leading-relaxed">"Atendimento excelente e estilo fast-food, e pasmem, aos fins de semana. Amei!"</p>
+        <footer class="mt-4 text-sm text-ink-3">Avaliação no Google</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIFERENCIAIS ============ -->
+<section class="py-16 md:py-24 bg-cream paper-grain">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="fade-up text-center max-w-xl mx-auto">
+      <span class="text-burnt font-semibold text-sm tracking-[0.2em] uppercase">Por que o Junior do Bode</span>
+      <h2 class="font-display font-bold text-3xl md:text-5xl mt-3 leading-tight text-ink">Fartura, agilidade e sabor de verdade</h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-12">
+      <div class="fade-up bg-white rounded-2xl p-6 text-center shadow-[0_2px_0_#e8dcc0]">
+        <svg class="w-8 h-8 text-burnt mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 15c0-4 3-6 8-6s8 2 8 6-4 6-8 6-8-2-8-6z"/><path d="M6 9c0-3 2-5 6-5s6 2 6 5"/></svg>
+        <p class="font-display font-semibold text-ink">Sabor nordestino</p>
+        <p class="text-xs text-ink-3 mt-1">Bode e cupim de verdade</p>
+      </div>
+      <div class="fade-up bg-white rounded-2xl p-6 text-center shadow-[0_2px_0_#e8dcc0]">
+        <svg class="w-8 h-8 text-burnt mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 13l1.5-5A2 2 0 016.4 6.5h11.2A2 2 0 0119.5 8l1.5 5M3 13v5a1 1 0 001 1h1a1 1 0 001-1v-1h12v1a1 1 0 001 1h1a1 1 0 001-1v-5M3 13h18"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>
+        <p class="font-display font-semibold text-ink">Drive-through</p>
+        <p class="text-xs text-ink-3 mt-1">Sem sair do carro</p>
+      </div>
+      <div class="fade-up bg-white rounded-2xl p-6 text-center shadow-[0_2px_0_#e8dcc0]">
+        <svg class="w-8 h-8 text-burnt mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 17h4l2-6h6l3 6h3M9 11V7h4l2 4"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+        <p class="font-display font-semibold text-ink">Entrega</p>
+        <p class="text-xs text-ink-3 mt-1">Peça de onde estiver</p>
+      </div>
+      <div class="fade-up bg-white rounded-2xl p-6 text-center shadow-[0_2px_0_#e8dcc0]">
+        <svg class="w-8 h-8 text-burnt mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 15c0-4 3-6 8-6s8 2 8 6"/><path d="M4 15h16v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2z"/></svg>
+        <p class="font-display font-semibold text-ink">Refeição no local</p>
+        <p class="text-xs text-ink-3 mt-1">Ambiente simples e gostoso</p>
+      </div>
+      <div class="fade-up bg-white rounded-2xl p-6 text-center shadow-[0_2px_0_#e8dcc0]">
+        <svg class="w-8 h-8 text-burnt mx-auto mb-3" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 18l1.3-6L1.3 7.7l6.1-.6L10 1.5z"/></svg>
+        <p class="font-display font-semibold text-ink">4,4 estrelas</p>
+        <p class="text-xs text-ink-3 mt-1">119 avaliações no Google</p>
+      </div>
+      <div class="fade-up bg-white rounded-2xl p-6 text-center shadow-[0_2px_0_#e8dcc0]">
+        <svg class="w-8 h-8 text-burnt mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h16v11H7l-3 3V4z"/></svg>
+        <p class="font-display font-semibold text-ink">Pedido pelo WhatsApp</p>
+        <p class="text-xs text-ink-3 mt-1">Rápido e sem complicação</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARA QUEM É ============ -->
+<section id="sobre" class="py-16 md:py-24 bg-ink text-cream torn-edge" style="--edge-color:#F5EEDD">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="fade-up text-center max-w-xl mx-auto">
+      <span class="text-mustard font-semibold text-sm tracking-[0.2em] uppercase">É pra você se</span>
+      <h2 class="font-display font-bold text-3xl md:text-5xl mt-3 leading-tight">Bate aquela vontade de carne de verdade</h2>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-3 md:gap-4 mt-12">
+      <span class="fade-up bg-ink-2 border border-white/10 rounded-full px-5 py-3 text-sm md:text-base font-medium">Almoço em família</span>
+      <span class="fade-up bg-ink-2 border border-white/10 rounded-full px-5 py-3 text-sm md:text-base font-medium">Sábado sem cozinhar</span>
+      <span class="fade-up bg-mustard text-ink rounded-full px-5 py-3 text-sm md:text-base font-semibold">Aquela vontade de carne</span>
+      <span class="fade-up bg-ink-2 border border-white/10 rounded-full px-5 py-3 text-sm md:text-base font-medium">Matar a fome sem complicação</span>
+      <span class="fade-up bg-ink-2 border border-white/10 rounded-full px-5 py-3 text-sm md:text-base font-medium">Comida de verdade, sem enrolação</span>
+      <span class="fade-up bg-ink-2 border border-white/10 rounded-full px-5 py-3 text-sm md:text-base font-medium">Fim de semana em família</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCALIZAÇÃO + INFORMAÇÕES ============ -->
+<section id="localizacao" class="py-16 md:py-24 bg-cream-2">
+  <div class="max-w-6xl mx-auto px-5 md:px-8">
+    <div class="fade-up">
+      <span class="text-burnt font-semibold text-sm tracking-[0.2em] uppercase">Onde estamos</span>
+      <h2 class="font-display font-bold text-3xl md:text-5xl mt-3 leading-tight text-ink">Fácil de achar, fácil de chegar</h2>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-6 md:gap-8 mt-10">
+      <div class="lg:col-span-3 fade-up rounded-2xl overflow-hidden border border-ink/10 aspect-[4/3] md:aspect-[16/10]">
+        <iframe
+          title="Mapa de localização do Junior do Bode em Feira de Santana"
+          class="w-full h-full"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Restaurante+Junior+do+Bode,-12.2468289,-38.9234394&output=embed">
+        </iframe>
+      </div>
+
+      <div class="lg:col-span-2 fade-up bg-white rounded-2xl p-6 md:p-8 shadow-[0_2px_0_#e8dcc0] flex flex-col gap-6">
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-burnt shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1a6 6 0 00-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 00-6-6zm0 8.5A2.5 2.5 0 1110 4a2.5 2.5 0 010 5.5z"/></svg>
+          <div>
+            <p class="font-semibold text-ink">Endereço</p>
+            <p class="text-sm text-ink-3 mt-0.5">Av. Artêmia Pires Freitas, 132 – Sim, Feira de Santana – BA, 40301-110</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-burnt shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.75 4a.75.75 0 00-1.5 0v4.25c0 .28.14.54.37.7l3 2a.75.75 0 10.86-1.23L10.75 10V6z"/></svg>
+          <div>
+            <p class="font-semibold text-ink">Horário</p>
+            <p class="text-sm text-ink-3 mt-0.5">Todos os dias, das 11h30 às 16h00</p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-burnt shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.1 7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.5.9.9-3.4-.2-.3C3.5 14.4 3 13.2 3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9.2z"/></svg>
+          <div>
+            <p class="font-semibold text-ink">Contato</p>
+            <p class="text-sm text-ink-3 mt-0.5">(75) 99229-7914 · aceita cartão</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 mt-2">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=-12.2468289,-38.9234394" target="_blank" rel="noopener"
+             class="flex-1 inline-flex items-center justify-center gap-2 bg-ink hover:bg-ink-2 transition-colors text-cream font-semibold px-5 py-3.5 rounded-full text-sm">
+            Como chegar
+          </a>
+          <a href="https://wa.me/5575992297914" data-wa="pedido"
+             class="flex-1 inline-flex items-center justify-center gap-2 bg-burnt hover:bg-burnt-dark transition-colors text-cream font-semibold px-5 py-3.5 rounded-full text-sm">
+            Pedir agora
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="relative py-20 md:py-28 bg-burnt text-cream overflow-hidden">
+  <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-white/5"></div>
+  <div class="absolute -left-16 -bottom-16 w-56 h-56 rounded-full bg-white/5"></div>
+  <div class="relative max-w-3xl mx-auto px-5 md:px-8 text-center fade-up">
+    <div class="inline-flex items-center gap-1.5 bg-ink/20 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide mb-6 stamp">
+      SABOR APROVADO · 4,4★
+    </div>
+    <h2 class="font-display font-bold text-3xl md:text-5xl leading-tight">Seu próximo almoço pode começar aqui.</h2>
+    <p class="mt-4 text-cream/85 md:text-lg">Viu a comida, sentiu vontade? É só chamar no WhatsApp.</p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="https://wa.me/5575992297914" data-wa="pedido"
+         class="inline-flex items-center justify-center gap-2 bg-ink hover:bg-ink-2 transition-colors text-cream font-bold text-base px-8 py-4 rounded-full">
+        Pedir pelo WhatsApp
+      </a>
+      <a href="https://www.canva.com/design/DAG80VpFfd8/dVuLpSceZWFhwHhWDzjRfQ/view" target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-cream/50 hover:border-cream transition-colors text-cream font-bold text-base px-8 py-4 rounded-full">
+        Ver cardápio
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink text-cream/70 pt-14 pb-28 md:pb-14">
+  <div class="max-w-6xl mx-auto px-5 md:px-8 grid md:grid-cols-3 gap-10">
+    <div>
+      <span class="font-display font-bold text-xl text-mustard">Junior<span class="text-cream"> do Bode</span></span>
+      <p class="text-sm mt-3 leading-relaxed max-w-xs">Comida nordestina em Feira de Santana – BA. Refeição no local, drive-through e entrega.</p>
+    </div>
+    <div>
+      <p class="font-semibold text-cream mb-3 text-sm uppercase tracking-wide">Contato</p>
+      <ul class="space-y-2 text-sm">
+        <li>Av. Artêmia Pires Freitas, 132 – Sim, Feira de Santana – BA</li>
+        <li>(75) 99229-7914</li>
+        <li>Todos os dias, 11h30 às 16h00</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold text-cream mb-3 text-sm uppercase tracking-wide">Links</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#cardapio" class="hover:text-mustard transition-colors">Cardápio</a></li>
+        <li><a href="#avaliacoes" class="hover:text-mustard transition-colors">Avaliações</a></li>
+        <li><a href="#localizacao" class="hover:text-mustard transition-colors">Localização</a></li>
+        <li><a href="https://wa.me/5575992297914" data-wa="pedido" class="hover:text-mustard transition-colors">Pedir pelo WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-5 md:px-8 mt-10 pt-6 border-t border-white/10 text-xs text-cream/50">
+    © <span id="ano"></span> Junior do Bode. Todos os direitos reservados.
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLUTUANTE (desktop/tablet) ============ -->
+<a href="https://wa.me/5575992297914" data-wa="pedido"
+   class="hidden sm:flex fixed bottom-6 right-6 z-40 items-center justify-center w-14 h-14 rounded-full bg-burnt hover:bg-burnt-dark shadow-xl shadow-black/30 transition-transform hover:scale-105"
+   aria-label="Pedir pelo WhatsApp">
+  <svg class="w-7 h-7 text-cream" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.1 7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.5.9.9-3.4-.2-.3C3.5 14.4 3 13.2 3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9.2z"/></svg>
+</a>
+
+<!-- ============ BARRA FIXA INFERIOR (mobile) ============ -->
+<nav class="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-ink text-cream border-t border-white/10 grid grid-cols-3" aria-label="Navegação rápida mobile">
+  <a href="https://www.canva.com/design/DAG80VpFfd8/dVuLpSceZWFhwHhWDzjRfQ/view" target="_blank" rel="noopener" class="flex flex-col items-center justify-center gap-1 py-2.5 active:bg-white/10">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 4h16v11H7l-3 3V4z"/><path d="M8 9h8M8 12h5"/></svg>
+    <span class="text-[11px] font-medium">Cardápio</span>
+  </a>
+  <a href="https://wa.me/5575992297914" data-wa="pedido" class="flex flex-col items-center justify-center gap-1 py-2.5 bg-burnt active:bg-burnt-dark">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.4 7.6 9.1 7c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.3c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.5.9.9-3.4-.2-.3C3.5 14.4 3 13.2 3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9.2z"/></svg>
+    <span class="text-[11px] font-semibold">WhatsApp</span>
+  </a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=-12.2468289,-38.9234394" target="_blank" rel="noopener" class="flex flex-col items-center justify-center gap-1 py-2.5 active:bg-white/10">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M10 2a6 6 0 00-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 00-6-6z"/><circle cx="10" cy="8" r="2"/></svg>
+    <span class="text-[11px] font-medium">Como chegar</span>
+  </a>
+</nav>
+
+<!-- ============ SCHEMA.ORG ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Junior do Bode",
+  "servesCuisine": "Nordestina",
+  "priceRange": "R$ 20-100",
+  "telephone": "+5575992297914",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Artêmia Pires Freitas, 132 - Sim",
+    "addressLocality": "Feira de Santana",
+    "addressRegion": "BA",
+    "postalCode": "40301-110",
+    "addressCountry": "BR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "119"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:30",
+    "closes": "16:00"
+  },
+  "acceptsReservations": "False",
+  "paymentAccepted": "Cartão de crédito, Cartão de débito",
+  "url": "https://restaurante-junior-do-bode.negocio.site/"
+}
+</script>
+
+<script>
+  // Ano dinâmico no rodapé
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  // Menu mobile
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const iconOpen = document.getElementById('iconOpen');
+  const iconClose = document.getElementById('iconClose');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!isOpen));
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    iconOpen.classList.remove('hidden');
+    iconClose.classList.add('hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Mensagens diferentes de WhatsApp por contexto (pedido)
+  const PEDIDO_MSG = "Olá! Vim pelo site do Junior do Bode e gostaria de fazer um pedido 🐐";
+  document.querySelectorAll('a[data-wa="pedido"]').forEach(a => {
+    a.href = "https://wa.me/5575992297914?text=" + encodeURIComponent(PEDIDO_MSG);
+  });
+
+  // Reveal suave ao rolar (respeita prefers-reduced-motion via CSS acima)
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const items = document.querySelectorAll('.fade-up');
+  if (reduceMotion) {
+    items.forEach(el => el.classList.add('is-visible'));
+  } else if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(el => io.observe(el));
+  } else {
+    items.forEach(el => el.classList.add('is-visible'));
+  }
+
+  // Header muda leve opacidade ao rolar (feedback sutil)
+  const header = document.querySelector('header');
+  window.addEventListener('scroll', () => {
+    header.style.boxShadow = window.scrollY > 8 ? '0 6px 20px rgba(0,0,0,0.25)' : 'none';
+  }, { passive: true });
+</script>
+
+</body>
+</html>
